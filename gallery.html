@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Gallery</title>
+    <style>
+      /* General page style */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* plain background */
+        text-align: center;
+      }
+
+      /* Header / Home section */
+      .home {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gallery-button {
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .gallery-button:hover {
+        background-color: #2980b9;
+      }
+
+      /* Gallery section */
+      .gallery {
+        padding: 40px 20px;
+      }
+
+      .gallery h1 {
+        margin-bottom: 30px;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .gallery-container img {
+        width: 250px;
+        height: 325px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .gallery-container img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Home section -->
+
+    <!-- Gallery section -->
+    <div id="gallery" class="gallery">
+      <h1>Happy Birthday</h1>
+      <div class="gallery-container">
+        <img src="1.png" alt="Image 1" />
+        <img src="2.jpg" alt="Image 2" />
+        <img src="3.jpg" alt="Image 3" />
+        <img src="4.jpg" alt="Image 4" />
+      </div>
+    </div>
+  </body>
+</html>

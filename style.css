@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: rgb(138, 80, 196);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN SECTION */
+.main {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.main h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.main p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+button {
+  padding: 15px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ff4d6d;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ff1e56;
+}
+
+/* WISH MESSAGE */
+#wish {
+  margin-top: 30px;
+  font-size: 24px;
+  display: none;
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
